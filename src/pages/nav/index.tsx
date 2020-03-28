@@ -1,49 +1,36 @@
 import React from "react";
-import { Flex, Box, Text, Button, Image } from "rebass";
-import bars from "../../components/images/bars.svg";
+import { Flex, Box, Button, Image } from "rebass";
+
+import { Links } from "./links";
+import { LogoLeft } from "./LogoLeft";
+import { LogoRight } from "./LogoRight";
+import bars from "./images/bars.svg";
+import logo from "./images/logo6.png";
 
 interface IProps {}
 
 const Nav: React.FC<IProps> = (): JSX.Element => {
   return (
     <Flex
-      mx={-2}
-      alignItems="center"
       justifyContent="flex-start"
       sx={{
         position: "relative",
-        bg: "red"
+        bg: "blue"
       }}
     >
-      <Box width={1 / 2} px={2}>
-        <Text p={1} color="background" bg="orange">
-          Shit
-        </Text>
-      </Box>
-      <Box
+      <Flex
         sx={{
-          ml: ["auto"],
-          px: 2,
-          mt: 4,
-          mb: 2,
-          minWidth: "49px",
-          minHeight: "49px",
-
-          svg: {
-            position: "relative",
-            top: "2px"
-          }
+          ml: ["left"],
+          bg: "orange"
         }}
       >
-        <Button variant="outline" mr={2}>
-          <Image
-            src={bars}
-            sx={{
-              width: ["100%", "100%"]
-            }}
-          />
-        </Button>
-      </Box>
+        <LogoLeft image={logo} />
+
+        <Links>Hola</Links>
+        <Links>Another</Links>
+      </Flex>
+
+      <LogoRight />
     </Flex>
   );
 };
