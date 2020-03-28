@@ -1,10 +1,14 @@
 import React from "react";
+import { ThemeProvider } from "theme-ui";
+import { theme } from "./styles";
 
 import Router from "./router";
 function App() {
   return (
     <>
-      <Router />
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
     </>
   );
 }
