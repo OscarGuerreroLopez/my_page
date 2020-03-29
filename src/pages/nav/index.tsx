@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Flex } from "rebass";
+import { useColorMode } from "theme-ui";
 
 import { Links } from "./links";
 import { LinksBellow } from "./linksBellow";
@@ -12,6 +13,7 @@ interface IProps {}
 const Nav: React.FC<IProps> = (): JSX.Element => {
   const linkArray = ["Nosotros", "Servicios", "Contacto", "Another"];
   const [displayLinks, setDisplayLinks] = useState(false);
+  const [colorMode, setColorMode] = useColorMode<string>();
   return (
     <>
       <Flex
@@ -27,7 +29,11 @@ const Nav: React.FC<IProps> = (): JSX.Element => {
           }}
         >
           <LogoLeft image={logo} />
-          <Links links={linkArray} />
+          <Links
+            links={linkArray}
+            colorMode={colorMode}
+            setColorMode={setColorMode}
+          />
         </Flex>
 
         <LogoRight
@@ -36,7 +42,12 @@ const Nav: React.FC<IProps> = (): JSX.Element => {
         />
       </Flex>
 
-      <LinksBellow links={linkArray} displayLinks={displayLinks} />
+      <LinksBellow
+        links={linkArray}
+        displayLinks={displayLinks}
+        colorMode={colorMode}
+        setColorMode={setColorMode}
+      />
     </>
   );
 };
