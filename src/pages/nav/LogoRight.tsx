@@ -1,7 +1,9 @@
 import React from "react";
 import { Box, Image, Button, Flex, Text } from "rebass";
+import { useThemeUI } from "theme-ui";
 
 import bars from "./images/bars.svg";
+import bars2 from "./images/bars2.svg";
 
 interface IProps {
   displayLinks: boolean;
@@ -11,6 +13,8 @@ export const LogoRight: React.FC<IProps> = ({
   displayLinks,
   setDisplayLinks
 }): JSX.Element => {
+  const context = useThemeUI();
+  const { colorMode } = context;
   return (
     <Flex sx={{ ml: ["auto"] }}>
       <Box
@@ -22,6 +26,7 @@ export const LogoRight: React.FC<IProps> = ({
           mb: 2,
           minWidth: "49px",
           minHeight: "49px",
+
           "@media screen and (min-width: 1024px)": {
             display: "none"
           },
@@ -35,7 +40,7 @@ export const LogoRight: React.FC<IProps> = ({
         <Button
           variant="outline"
           mr={2}
-          bg="#DCDCDA"
+          bg="inherit"
           sx={{
             mt: 3
           }}
@@ -44,7 +49,8 @@ export const LogoRight: React.FC<IProps> = ({
           }}
         >
           <Image
-            src={bars}
+            // src={colorMode === "dark" ? barsDark : barsLight}
+            src={colorMode === "default" ? bars : bars2}
             sx={{
               width: ["100%", "100%"]
             }}
@@ -57,10 +63,16 @@ export const LogoRight: React.FC<IProps> = ({
             display: "none"
           },
           px: 2,
-          py: 4
+          py: [1, 1, 1, 1, 1, "25px", 3]
         }}
       >
-        <Text>Que chulo esta mierda</Text>
+        <Text
+          sx={{
+            fontSize: [4, 4, 4, 4, 4, 5, 6]
+          }}
+        >
+          Automatismos y cerrajeria DROS
+        </Text>
       </Box>
     </Flex>
   );

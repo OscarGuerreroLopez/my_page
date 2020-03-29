@@ -41,6 +41,7 @@ export const theme = {
       }
     }
   },
+
   text: {
     heading: {
       fontFamily: "heading",
@@ -50,13 +51,13 @@ export const theme = {
   },
   styles: {
     root: {
-      fontFamily: "body",
+      fontFamily: "chewy",
       lineHeight: "body",
       fontWeight: "body"
     },
     h1: {
       variant: "text.heading",
-      fontSize: 6
+      fontSize: 5
     },
     h2: {
       variant: "text.heading",

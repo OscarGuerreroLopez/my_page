@@ -1,39 +1,42 @@
 import React, { useState } from "react";
 import { Flex } from "rebass";
-import { useColorMode } from "theme-ui";
 
 import { Links } from "./links";
 import { LinksBellow } from "./linksBellow";
 import { LogoLeft } from "./LogoLeft";
 import { LogoRight } from "./LogoRight";
-import logo from "./images/logo6.png";
+import light from "./images/logo7.png";
+import dark from "./images/logo8.png";
+import barsLight from "./images/barsLight.png";
+import barsDark from "./images/barsDark.png";
+
+import { useThemeUI } from "theme-ui";
 
 interface IProps {}
 
 const Nav: React.FC<IProps> = (): JSX.Element => {
   const linkArray = ["Nosotros", "Servicios", "Contacto", "Another"];
   const [displayLinks, setDisplayLinks] = useState(false);
-  const [colorMode, setColorMode] = useColorMode<string>();
+  const context = useThemeUI();
+  const { colorMode } = context;
   return (
     <>
       <Flex
         justifyContent="flex-start"
         sx={{
-          maxHeight: "90px"
+          maxHeight: "90px",
+          color: theme => `${colorMode === "dark" ? "#3383FF" : null}`,
+          bg: theme => `${colorMode === "default" ? "#EEEEEC" : null}`
         }}
       >
         <Flex
           sx={{
             ml: ["left"],
-            width: ["15%", "25%", "25%", "18%", "11%", "50%", "50%"]
+            width: ["40%", "35%", "25%", "18%", "11%", "50%", "50%"]
           }}
         >
-          <LogoLeft image={logo} />
-          <Links
-            links={linkArray}
-            colorMode={colorMode}
-            setColorMode={setColorMode}
-          />
+          <LogoLeft image={colorMode === "dark" ? dark : light} />
+          <Links links={linkArray} />
         </Flex>
 
         <LogoRight
@@ -42,12 +45,7 @@ const Nav: React.FC<IProps> = (): JSX.Element => {
         />
       </Flex>
 
-      <LinksBellow
-        links={linkArray}
-        displayLinks={displayLinks}
-        colorMode={colorMode}
-        setColorMode={setColorMode}
-      />
+      <LinksBellow links={linkArray} displayLinks={displayLinks} />
     </>
   );
 };

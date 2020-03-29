@@ -1,48 +1,53 @@
 import React from "react";
 import { Flex, Text } from "rebass";
+import { useThemeUI } from "theme-ui";
+import { v4 as uuidv4 } from "uuid";
 
 interface IProps {
   links: string[];
-  colorMode: string;
-  setColorMode: (colorMode: string) => void;
 }
-export const Links: React.FC<IProps> = ({
-  links,
-  colorMode,
-  setColorMode
-}): JSX.Element => {
+export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
+  const context = useThemeUI();
+  const { colorMode, setColorMode } = context;
+
   return (
     <>
-      {links.map((link: string) => (
-        <Flex
-          sx={{
-            px: 2,
-            py: 4,
-            height: ["100%"],
-            cursor: "pointer",
-            "@media screen and (max-width: 1023px)": {
-              display: "none"
-            }
-          }}
-        >
-          <Text>{link}</Text>
-        </Flex>
-      ))}
       <Flex
         sx={{
-          px: 2,
-          py: 4,
           height: ["100%"],
           cursor: "pointer",
           "@media screen and (max-width: 1023px)": {
             display: "none"
           }
         }}
-        onClick={() => {
-          setColorMode(colorMode === "default" ? "dark" : "default");
-        }}
       >
-        <Text>Modo {colorMode === "default" ? "Oscuro" : "Claro"}</Text>
+        {links.map((link: string) => {
+          const index = uuidv4();
+          return (
+            <Text
+              sx={{
+                px: 2,
+                py: [1, 1, 1, 1, 1, 4, 4],
+                fontSize: [4, 4, 4, 4, 4, "18px", 4]
+              }}
+              key={index}
+            >
+              {link}
+            </Text>
+          );
+        })}
+        <Text
+          sx={{
+            px: 2,
+            py: [1, 1, 1, 1, 1, 4, 4],
+            fontSize: [4, 4, 4, 4, 4, "18px", 4]
+          }}
+          onClick={() => {
+            setColorMode(colorMode === "default" ? "dark" : "default");
+          }}
+        >
+          Modo {colorMode === "default" ? "Oscuro" : "Claro"}
+        </Text>
       </Flex>
     </>
   );

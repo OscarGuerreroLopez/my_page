@@ -17,24 +17,18 @@ export const LinksBellow: React.FC<IProps> = ({
   return (
     <>
       {displayLinks &&
-        links.map((link: string) => {
-          const index = uuidv4();
-          return (
-            <Flex
-              justifyContent="center"
-              sx={{
-                "@media screen and (min-width: 1023px)": {
-                  display: "none"
-                },
-                color: theme => `${colorMode === "dark" ? "#3383FF" : null}`,
-                bg: theme => `${colorMode === "default" ? "#EEEEEC" : null}`
-              }}
-              key={index}
-            >
-              <Box>{link}</Box>
-            </Flex>
-          );
-        })}
+        links.map((link: string) => (
+          <Flex
+            justifyContent="center"
+            sx={{
+              "@media screen and (min-width: 1023px)": {
+                display: "none"
+              }
+            }}
+          >
+            <Box>{link}</Box>
+          </Flex>
+        ))}
       {displayLinks && (
         <Flex
           justifyContent="center"
@@ -42,9 +36,7 @@ export const LinksBellow: React.FC<IProps> = ({
             cursor: "pointer",
             "@media screen and (min-width: 1023px)": {
               display: "none"
-            },
-            color: theme => `${colorMode === "dark" ? "#3383FF" : null}`,
-            bg: theme => `${colorMode === "default" ? "#EEEEEC" : null}`
+            }
           }}
           onClick={() => {
             setColorMode(colorMode === "default" ? "dark" : "default");
