@@ -6,12 +6,13 @@ interface IProps {
 }
 export const LogoLeft: React.FC<IProps> = ({ image }): JSX.Element => {
   return (
-    <Box width={1 / 4} bg="red">
+    <Box width={[1, 1, 1, 1, 1, 1 / 6, 1 / 8]}>
       <Image
         src={image}
         sx={{
-          width: ["100%", "100%", "100%", "100%", "100%", "100%"],
-          mt: 2
+          mt: 1,
+          px: 1,
+          height: ["100%"]
         }}
       />
     </Box>

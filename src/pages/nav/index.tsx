@@ -1,37 +1,43 @@
-import React from "react";
-import { Flex, Box, Button, Image } from "rebass";
+import React, { useState } from "react";
+import { Flex } from "rebass";
 
 import { Links } from "./links";
+import { LinksBellow } from "./linksBellow";
 import { LogoLeft } from "./LogoLeft";
 import { LogoRight } from "./LogoRight";
-import bars from "./images/bars.svg";
 import logo from "./images/logo6.png";
 
 interface IProps {}
 
 const Nav: React.FC<IProps> = (): JSX.Element => {
+  const linkArray = ["Nosotros", "Servicios", "Contacto", "Another"];
+  const [displayLinks, setDisplayLinks] = useState(false);
   return (
-    <Flex
-      justifyContent="flex-start"
-      sx={{
-        position: "relative",
-        bg: "blue"
-      }}
-    >
+    <>
       <Flex
+        justifyContent="flex-start"
         sx={{
-          ml: ["left"],
-          bg: "orange"
+          maxHeight: "90px"
         }}
       >
-        <LogoLeft image={logo} />
+        <Flex
+          sx={{
+            ml: ["left"],
+            width: ["15%", "25%", "25%", "18%", "11%", "50%", "50%"]
+          }}
+        >
+          <LogoLeft image={logo} />
+          <Links links={linkArray} />
+        </Flex>
 
-        <Links>Hola</Links>
-        <Links>Another</Links>
+        <LogoRight
+          displayLinks={displayLinks}
+          setDisplayLinks={setDisplayLinks}
+        />
       </Flex>
 
-      <LogoRight />
-    </Flex>
+      <LinksBellow links={linkArray} displayLinks={displayLinks} />
+    </>
   );
 };
 

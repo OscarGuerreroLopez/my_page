@@ -1,20 +1,26 @@
 import React from "react";
 import { Flex, Text } from "rebass";
 
-interface IProps {}
-export const Links: React.FC<IProps> = ({ children }): JSX.Element => {
+interface IProps {
+  links: string[];
+}
+export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
   return (
-    <Flex
-      sx={{
-        px: 2,
-        py: 4,
-        "@media screen and (max-width: 1024px)": {
-          display: "none"
-        }
-      }}
-      bg="yellow"
-    >
-      <Text>{children}</Text>
-    </Flex>
+    <>
+      {links.map((link: string) => (
+        <Flex
+          sx={{
+            px: 2,
+            py: 4,
+            height: ["100%"],
+            "@media screen and (max-width: 1023px)": {
+              display: "none"
+            }
+          }}
+        >
+          <Text>{link}</Text>
+        </Flex>
+      ))}
+    </>
   );
 };
