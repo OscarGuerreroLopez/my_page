@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box } from "rebass";
+import { Flex, Box, Text } from "rebass";
 import { useThemeUI } from "theme-ui";
 import { v4 as uuidv4 } from "uuid";
 
@@ -31,7 +31,7 @@ export const LinksBellow: React.FC<IProps> = ({
               }}
               key={index}
             >
-              <Box>{link}</Box>
+              <Text sx={{ fontSize: [4, 5, 5, 5, 6, 4, 4] }}>{link}</Text>
             </Flex>
           );
         })}
@@ -50,7 +50,9 @@ export const LinksBellow: React.FC<IProps> = ({
             setColorMode(colorMode === "default" ? "dark" : "default");
           }}
         >
-          <Box>Modo {colorMode === "default" ? "Oscuro" : "Claro"}</Box>
+          <Text sx={{ fontSize: [4, 5, 5, 5, 6, 4, 4] }}>
+            Modo {colorMode === "default" ? "Oscuro" : "Claro"}
+          </Text>
         </Flex>
       )}
     </>
