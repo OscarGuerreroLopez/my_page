@@ -13,6 +13,8 @@ const Router = () => {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
+
+          <Route component={Home} />
         </Switch>
       </Suspense>
     </BrowserRouter>

@@ -11,21 +11,16 @@ import oscar from "./images/Oscar.jpg";
 
 import { useThemeUI } from "theme-ui";
 
+interface IProps extends RouteComponentProps {}
+
 const Nav = withRouter(
-  ({ history }): JSX.Element => {
-    const linkArray = [
-      "About me",
-      "Work Experience",
-      "Contact",
-      "Repos",
-      "Blog",
-    ];
+  ({ history }: IProps): JSX.Element => {
     const [displayLinks, setDisplayLinks] = useState(false);
     const context = useThemeUI();
     const { colorMode } = context;
     const linksObject: IObjectLiteral = {
-      ["About me"]: "about",
-      ["Work Experience"]: "experience",
+      [`About me`]: "about",
+      [`Work Experience`]: "experience",
       Contact: "contact",
       Repos: "repos",
       Blog: "blog",

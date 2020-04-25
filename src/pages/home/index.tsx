@@ -1,21 +1,49 @@
-/** @jsx jsx */
-import React from "react";
-import { Text, Flex, Box, Heading, Button } from "rebass";
-import { jsx } from "theme-ui";
-import { useColorMode } from "theme-ui";
-import { Styled } from "theme-ui";
+import React, { useEffect } from "react";
+import { Flex, Box } from "rebass";
+import { withRouter, RouteComponentProps } from "react-router-dom";
 
-interface IProps {}
+import { MetaTags } from "../../utils/MetaTags";
+import { AboutUs } from "./about";
+import wave from "./images/wave.svg";
 
-const Home: React.FC<IProps> = (): JSX.Element => {
-  const [colorMode, setColorMode] = useColorMode();
-  return (
-    <Flex>
-      <Heading p={5} bg="muted">
-        Hello
-      </Heading>
-    </Flex>
-  );
-};
+interface IProps extends RouteComponentProps {}
+
+const Home = withRouter(
+  ({ history }: IProps): JSX.Element => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    const clickedAbout = () => {
+      history.push(`/about`);
+    };
+
+    return (
+      <>
+        <MetaTags />
+        <Flex>
+          <br />
+          <Flex
+            sx={{
+              width: "100%",
+            }}
+            justifyContent="center"
+          >
+            <Box
+              sx={{
+                width: "100%",
+                height: "400px",
+                backgroundImage: `url(${wave})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <AboutUs onClick={clickedAbout} />
+            </Box>
+          </Flex>
+        </Flex>
+      </>
+    );
+  },
+);
 
 export default Home;
