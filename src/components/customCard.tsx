@@ -26,8 +26,10 @@ export const CustomCard: React.FC<IProps> = ({
             : "0 0 16px rgba(0, 0, 0, .25)"
         }`,
         alignItems: "right",
-        background: `${context.colorMode !== "default" ? "#202020" : ""}`,
-        height: [null, null, null, null, null, "100%", "100%"],
+        background: `${
+          context.colorMode !== "default" ? "#202020" : "#FDFDFB"
+        }`,
+        // height: [null, null, null, null, null, "100%", "100%"],
       }}
     >
       {children}

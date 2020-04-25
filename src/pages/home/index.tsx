@@ -5,6 +5,7 @@ import { withRouter, RouteComponentProps } from "react-router-dom";
 import { MetaTags } from "../../utils/MetaTags";
 import { AboutUs } from "./about";
 import wave from "./images/wave.svg";
+import wave2 from "./images/wave2.svg";
 
 interface IProps extends RouteComponentProps {}
 
@@ -21,20 +22,57 @@ const Home = withRouter(
     return (
       <>
         <MetaTags />
+
         <Flex>
-          <br />
           <Flex
             sx={{
-              width: "100%",
+              mt: 3,
             }}
             justifyContent="center"
           >
             <Box
               sx={{
                 width: "100%",
-                height: "400px",
-                backgroundImage: `url(${wave})`,
+                minHeight: "200px",
+                backgroundImage: [
+                  "",
+                  "",
+                  "",
+                  "",
+                  `url(${wave})`,
+                  `url(${wave})`,
+                  `url(${wave})`,
+                ],
                 backgroundSize: "cover",
+                // bg: "grey",
+              }}
+            >
+              <AboutUs onClick={clickedAbout} />
+            </Box>
+          </Flex>
+        </Flex>
+        <Flex>
+          <Flex
+            sx={{
+              mt: 3,
+            }}
+            justifyContent="center"
+          >
+            <Box
+              sx={{
+                width: "100%",
+                minHeight: "200px",
+                backgroundImage: [
+                  "",
+                  "",
+                  "",
+                  "",
+                  `url(${wave2})`,
+                  `url(${wave2})`,
+                  `url(${wave2})`,
+                ],
+                backgroundSize: "cover",
+                // bg: "grey",
               }}
             >
               <AboutUs onClick={clickedAbout} />
