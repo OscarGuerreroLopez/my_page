@@ -11,7 +11,7 @@ interface IProps {
 }
 export const LogoRight: React.FC<IProps> = ({
   displayLinks,
-  setDisplayLinks
+  setDisplayLinks,
 }): JSX.Element => {
   const context = useThemeUI();
   const { colorMode } = context;
@@ -28,13 +28,13 @@ export const LogoRight: React.FC<IProps> = ({
           minHeight: "49px",
 
           "@media screen and (min-width: 1024px)": {
-            display: "none"
+            display: "none",
           },
 
           svg: {
             position: "relative",
-            top: "2px"
-          }
+            top: "2px",
+          },
         }}
       >
         <Button
@@ -42,7 +42,7 @@ export const LogoRight: React.FC<IProps> = ({
           mr={2}
           bg="inherit"
           sx={{
-            mt: 3
+            mt: [2, 3, 3, 3, 3],
           }}
           onClick={() => {
             setDisplayLinks(!displayLinks);
@@ -52,7 +52,7 @@ export const LogoRight: React.FC<IProps> = ({
             // src={colorMode === "dark" ? barsDark : barsLight}
             src={colorMode === "default" ? bars : bars2}
             sx={{
-              width: ["100%", "100%"]
+              width: ["100%", "100%"],
             }}
           />
         </Button>
@@ -60,18 +60,18 @@ export const LogoRight: React.FC<IProps> = ({
       <Box
         sx={{
           "@media screen and (max-width: 1023px)": {
-            display: "none"
+            display: "none",
           },
           px: 2,
-          py: [1, 1, 1, 1, 1, "23px", "13px"]
+          py: [1, 1, 1, 1, 1, "23px", "13px"],
         }}
       >
         <Text
           sx={{
-            fontSize: [4, 4, 4, 4, 4, 5, 6]
+            fontSize: [4, 4, 4, 4, 4, 5, 6],
           }}
         >
-          Automatismos y cerrajeria DROS
+          Oscar Developer at work
         </Text>
       </Box>
     </Flex>

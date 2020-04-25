@@ -17,8 +17,8 @@ export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
           height: ["100%"],
           cursor: "pointer",
           "@media screen and (max-width: 1023px)": {
-            display: "none"
-          }
+            display: "none",
+          },
         }}
       >
         {links.map((link: string) => {
@@ -28,7 +28,7 @@ export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
               sx={{
                 px: 2,
                 py: [1, 1, 1, 1, 1, 4, 4],
-                fontSize: [4, 4, 4, 4, 4, "18px", 4]
+                fontSize: [4, 4, 4, 4, 4, 2, 3],
               }}
               key={index}
             >
@@ -40,7 +40,7 @@ export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
           sx={{
             px: 2,
             py: [1, 1, 1, 1, 1, 4, 4],
-            fontSize: [4, 4, 4, 4, 4, "18px", 4]
+            fontSize: [4, 4, 4, 4, 4, 2, 3],
           }}
           onClick={() => {
             setColorMode(colorMode === "default" ? "dark" : "default");
