@@ -15,6 +15,7 @@ export const Links: React.FC<IProps> = ({
   const { colorMode, setColorMode } = context;
 
   const links = Object.keys(linksObject);
+  const fontSizeArray = [4, 4, 4, 4, 4, "18px", "25px"];
 
   return (
     <>
@@ -34,7 +35,7 @@ export const Links: React.FC<IProps> = ({
               sx={{
                 px: 2,
                 py: [1, 1, 1, 1, 1, 4, 4],
-                fontSize: [4, 4, 4, 4, 4, 2, 3],
+                fontSize: fontSizeArray,
               }}
               key={index}
               onClick={() => {
@@ -49,7 +50,7 @@ export const Links: React.FC<IProps> = ({
           sx={{
             px: 2,
             py: [1, 1, 1, 1, 1, 4, 4],
-            fontSize: [4, 4, 4, 4, 4, 2, 3],
+            fontSize: fontSizeArray,
           }}
           onClick={() => {
             setColorMode(colorMode === "default" ? "dark" : "default");
