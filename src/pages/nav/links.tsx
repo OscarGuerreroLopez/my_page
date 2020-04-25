@@ -4,11 +4,17 @@ import { useThemeUI } from "theme-ui";
 import { v4 as uuidv4 } from "uuid";
 
 interface IProps {
-  links: string[];
+  linksObject: IObjectLiteral;
+  onClick: (link: string) => void;
 }
-export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
+export const Links: React.FC<IProps> = ({
+  linksObject,
+  onClick,
+}): JSX.Element => {
   const context = useThemeUI();
   const { colorMode, setColorMode } = context;
+
+  const links = Object.keys(linksObject);
 
   return (
     <>
@@ -31,6 +37,9 @@ export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
                 fontSize: [4, 4, 4, 4, 4, 2, 3],
               }}
               key={index}
+              onClick={() => {
+                onClick(link);
+              }}
             >
               {link}
             </Text>
@@ -46,7 +55,7 @@ export const Links: React.FC<IProps> = ({ links }): JSX.Element => {
             setColorMode(colorMode === "default" ? "dark" : "default");
           }}
         >
-          Modo {colorMode === "default" ? "Oscuro" : "Claro"}
+          {colorMode === "default" ? "Dark" : "Light"} Theme
         </Text>
       </Flex>
     </>

@@ -71,7 +71,7 @@ export const LogoRight: React.FC<IProps> = ({
             fontSize: [4, 4, 4, 4, 4, 5, 6],
           }}
         >
-          Oscar Developer at work
+          Oscar Software Developer
         </Text>
       </Box>
     </Flex>

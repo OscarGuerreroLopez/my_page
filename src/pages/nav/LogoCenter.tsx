@@ -8,7 +8,7 @@ export const LogoCenter: React.FC<IProps> = () => {
     <Flex
       sx={{
         display: ["", "", "", "", "", "none", "none"],
-        mt: [4, 4, "29px", "25px", "25px"],
+        mt: ["25px", "29px", "29px", "25px", "25px"],
       }}
     >
       <Text
@@ -16,7 +16,7 @@ export const LogoCenter: React.FC<IProps> = () => {
           fontSize: [1, 2, 3, 4, 4, 5, 6],
         }}
       >
-        Oscar Developer at work
+        Oscar Software Developer
       </Text>
     </Flex>
   );
