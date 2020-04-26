@@ -51,7 +51,7 @@ export const theme = {
   },
   styles: {
     root: {
-      fontFamily: "chewy",
+      fontFamily: "Fredoka One",
       lineHeight: "body",
       fontWeight: "body",
     },

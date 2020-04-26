@@ -2,7 +2,12 @@ import React from "react";
 import { Flex, Text, Box, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
+import { Content } from "../../components/cardContent";
 import visionary from "./images/programming.svg";
+import office from "./images/office.svg";
+import worktogether from "./images/worktogether.svg";
+import data from "./images/data.svg";
+import feedback from "./images/feedback.svg";
 
 interface IProps {
   onClick: () => void;
@@ -47,79 +52,92 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
 
           width="100%"
         >
+          <Flex>
+            <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
+              <Image src={office} />
+            </Card>
+          </Flex>
           <Text
             fontSize={[2, 2, 3, 3, 3, 5, 5]}
             fontWeight="bold"
             textAlign="center"
           >
-            How could I help you?
+            How can I help you?
           </Text>
-          <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={"https://icongr.am/devicon/angularjs-original.svg?size=600"}
-              title={"Angular"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/nodejs-original.svg?size=600"}
-              title={"Node"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/react-original.svg?size=600"}
-              title={"React"}
-            />
+          <Flex
+            sx={{
+              mt: [6],
+              ml: [1, 1, 1, 1, 1, 3, 3],
+              mr: [1, 1, 1, 1, 1, 3, 3],
+            }}
+          >
+            <Card width="100%">
+              <Flex flexWrap="wrap">
+                <Flex width="30%" justifyContent="center">
+                  <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
+                    <Image src={worktogether} />
+                  </Card>
+                </Flex>
+                <Flex width="70%" justifyContent="center" flexWrap="wrap">
+                  <Content
+                    title={"Need help or advice on a project?"}
+                    content={
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                  />
+                </Flex>
+              </Flex>
+            </Card>
           </Flex>
-          <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={"https://icongr.am/devicon/cplusplus-original.svg?size=600"}
-              title={"C++"}
-            />
-
-            <StackImages
-              name={
-                "https://icongr.am/devicon/amazonwebservices-original.svg?size=600"
-              }
-              title={"Amazon"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/java-original.svg?size=600"}
-              title={"Java"}
-            />
+          <Flex
+            sx={{
+              mt: [6],
+              ml: [1, 1, 1, 1, 1, 3, 3],
+              mr: [1, 1, 1, 1, 1, 3, 3],
+            }}
+          >
+            <Card width="100%">
+              <Flex flexWrap="wrap">
+                <Flex width="70%" justifyContent="center" flexWrap="wrap">
+                  <Content
+                    title={"Don't know what to do with your data?"}
+                    content={
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                  />
+                </Flex>
+                <Flex width="30%" justifyContent="center">
+                  <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
+                    <Image src={data} />
+                  </Card>
+                </Flex>
+              </Flex>
+            </Card>
           </Flex>
-          <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={
-                "https://icongr.am/devicon/typescript-original.svg?size=600"
-              }
-              title={"TypeScript"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/redis-original.svg?size=600"}
-              title={"Redis"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/python-original.svg?size=600"}
-              title={"Python"}
-            />
-          </Flex>
-          <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={
-                "https://icongr.am/devicon/mongodb-original-wordmark.svg?size=600"
-              }
-              title={"MongoDB"}
-            />
-            <StackImages
-              name={
-                "https://icongr.am/devicon/mysql-original-wordmark.svg?size=600"
-              }
-              title={"MySql"}
-            />
-            <StackImages
-              name={
-                "https://icongr.am/devicon/gitlab-original-wordmark.svg?size=600"
-              }
-              title={"GitLab"}
-            />
+          <Flex
+            sx={{
+              mt: [6],
+              ml: [1, 1, 1, 1, 1, 3, 3],
+              mr: [1, 1, 1, 1, 1, 3, 3],
+            }}
+          >
+            <Card width="100%">
+              <Flex flexWrap="wrap">
+                <Flex width="30%" justifyContent="center">
+                  <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
+                    <Image src={feedback} />
+                  </Card>
+                </Flex>
+                <Flex width="70%" justifyContent="center" flexWrap="wrap">
+                  <Content
+                    title={"I am here to help other progress in their career"}
+                    content={
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                  />
+                </Flex>
+              </Flex>
+            </Card>
           </Flex>
         </CustomCard>
       </Flex>
