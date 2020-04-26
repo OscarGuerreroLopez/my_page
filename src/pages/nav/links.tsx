@@ -15,7 +15,7 @@ export const Links: React.FC<IProps> = ({
   const { colorMode, setColorMode } = context;
 
   const links = Object.keys(linksObject);
-  const fontSizeArray = [4, 4, 4, 4, 4, "18px", "25px"];
+  const fontSizeArray = [4, 4, 4, 4, 4, "20px", "25px"];
 
   return (
     <>

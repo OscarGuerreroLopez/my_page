@@ -19,7 +19,6 @@ const Nav = withRouter(
     const context = useThemeUI();
     const { colorMode } = context;
     const linksObject: IObjectLiteral = {
-      [`About me`]: "about",
       [`Work Experience`]: "experience",
       Contact: "contact",
       Repos: "repos",

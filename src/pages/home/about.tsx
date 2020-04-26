@@ -29,7 +29,7 @@ export const AboutUs: React.FC<IProps> = ({ onClick }): JSX.Element => {
       </Flex>
       <Flex
         sx={{
-          mt: [2, 2, 2, 3, 3, 3, 6],
+          mt: [2, 2, 2, 3, 3, 3, 5],
           width: ["100%", "100%", "100%", "100%", "50%"],
         }}
       >
@@ -45,13 +45,14 @@ export const AboutUs: React.FC<IProps> = ({ onClick }): JSX.Element => {
             About me
           </Text>
           <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Experienced Programmer and Operations Engineer with a demonstrated
+            history of working in the information technology and services
+            industry. Team player, communicative, problem-solving and eager to
+            learn everyday are just part of my soft skills.
+          </Text>
+          <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
+            Right now working with React, Node js and typescript. MongoDB and
+            MySql databases with mongoose and TypeOrm.
           </Text>
         </CustomCard>
       </Flex>
