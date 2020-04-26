@@ -13,7 +13,7 @@ export const LogoCenter: React.FC<IProps> = () => {
     >
       <Text
         sx={{
-          fontSize: [1, 2, 3, 4, 4, 5, 6],
+          fontSize: [1, "13px", 2, 3, 4, 5, 6],
         }}
       >
         Oscar Software Developer

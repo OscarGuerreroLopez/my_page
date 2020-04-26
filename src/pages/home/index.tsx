@@ -58,7 +58,7 @@ const Home = withRouter(
 
         <Flex
           sx={{
-            mt: [3, 4, 4, 4, -1],
+            mt: [2, 4, 4, 4, -1],
           }}
           justifyContent="center"
         >

@@ -22,7 +22,7 @@ export const LogoRight: React.FC<IProps> = ({
           ml: ["auto"],
           px: 2,
           py: 1,
-          mt: 0,
+          mt: [2, -1, -1, -1, 0],
           mb: 2,
           minWidth: "49px",
           minHeight: "49px",
@@ -68,7 +68,7 @@ export const LogoRight: React.FC<IProps> = ({
       >
         <Text
           sx={{
-            fontSize: [4, 4, 4, 4, 4, 5, 6],
+            fontSize: [4, 4, 4, 4, 4, 4, 5],
           }}
         >
           Oscar Software Developer

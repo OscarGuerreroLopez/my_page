@@ -36,7 +36,6 @@ export const Tech: React.FC<IProps> = ({ onClick }): JSX.Element => {
     <Flex flexWrap="wrap" justifyContent="center">
       <Flex
         sx={{
-          mt: [2, 2, 2, 3, 4, 4, 4],
           mb: [2, 2, 2, 3, 4, 4, 4],
           width: ["100%", "100%", "100%", "100%", "60%"],
         }}

@@ -18,30 +18,11 @@ interface IStackImage {
   title: string;
 }
 
-const StackImages: React.FC<IStackImage> = ({ name, title }): JSX.Element => {
-  return (
-    <Flex
-      sx={{
-        witdth: ["33.3%"],
-        ml: [2, 3, 3, 3, 2, 3, 4],
-        mr: [2, 3, 3, 3, 2, 3, 4],
-        mt: [2, 3, 3, 3, 2, 3, 4],
-      }}
-    >
-      <Card width={[40, 60, 80, 100, 120, 140, 200]} mx="auto">
-        <Image src={name} />
-        <Text textAlign="center">{title}</Text>
-      </Card>
-    </Flex>
-  );
-};
-
 export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
   return (
     <Flex flexWrap="wrap" justifyContent="center">
       <Flex
         sx={{
-          mt: [2, 2, 2, 3, 4, 4, 4],
           mb: [2, 2, 2, 3, 4, 4, 4],
           width: ["100%", "100%", "100%", "100%", "60%"],
         }}
@@ -66,19 +47,19 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
           </Text>
           <Flex
             sx={{
-              mt: [6],
+              mt: [4],
               ml: [1, 1, 1, 1, 1, 3, 3],
               mr: [1, 1, 1, 1, 1, 3, 3],
             }}
           >
             <Card width="100%">
               <Flex flexWrap="wrap">
-                <Flex width="30%" justifyContent="center">
-                  <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
+                <Flex width="35%" justifyContent="center" mt={[2]}>
+                  <Card width={[80, 150, 120, 150, 175, 210, 225]} mx="auto">
                     <Image src={worktogether} />
                   </Card>
                 </Flex>
-                <Flex width="70%" justifyContent="center" flexWrap="wrap">
+                <Flex width="65%" justifyContent="center" flexWrap="wrap">
                   <Content
                     title={"Need help or advice on a project?"}
                     content={
@@ -91,14 +72,14 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
           </Flex>
           <Flex
             sx={{
-              mt: [6],
+              mt: [4],
               ml: [1, 1, 1, 1, 1, 3, 3],
               mr: [1, 1, 1, 1, 1, 3, 3],
             }}
           >
             <Card width="100%">
               <Flex flexWrap="wrap">
-                <Flex width="70%" justifyContent="center" flexWrap="wrap">
+                <Flex width="65%" justifyContent="center" flexWrap="wrap">
                   <Content
                     title={"Don't know what to do with your data?"}
                     content={
@@ -106,7 +87,7 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
                     }
                   />
                 </Flex>
-                <Flex width="30%" justifyContent="center">
+                <Flex width="35%" mt={[2]} justifyContent="center">
                   <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
                     <Image src={data} />
                   </Card>
@@ -116,21 +97,21 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
           </Flex>
           <Flex
             sx={{
-              mt: [6],
+              mt: [4],
               ml: [1, 1, 1, 1, 1, 3, 3],
               mr: [1, 1, 1, 1, 1, 3, 3],
             }}
           >
             <Card width="100%">
               <Flex flexWrap="wrap">
-                <Flex width="30%" justifyContent="center">
+                <Flex width="35%" mt={[3]} justifyContent="center">
                   <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
                     <Image src={feedback} />
                   </Card>
                 </Flex>
-                <Flex width="70%" justifyContent="center" flexWrap="wrap">
+                <Flex width="65%" justifyContent="center" flexWrap="wrap">
                   <Content
-                    title={"I am here to help other progress in their career"}
+                    title={"I am here to help others progress in their career"}
                     content={
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     }
