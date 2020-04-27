@@ -18,14 +18,12 @@ export const AboutUs: React.FC<IProps> = ({ onClick }): JSX.Element => {
           justifyContent: "center",
         }}
       >
-        <Flex>
-          <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-            <Text fontSize={["3", "3", "3", "3", "4", "4", "5"]}>
-              Hello I am Oscar Guerrero
-            </Text>
-            <Image src={visionary} />
-          </Card>
-        </Flex>
+        <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
+          <Text fontSize={["3", "3", "3", "3", "4", "4", "5"]}>
+            Hello I am Oscar Guerrero
+          </Text>
+          <Image src={visionary} />
+        </Card>
       </Flex>
       <Flex
         sx={{

@@ -34,7 +34,7 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
             fontWeight="bold"
             textAlign="center"
           >
-            Experienced in data analytics for small and big companies
+            Experienced in software engineering for small and big companies
           </Text>
           <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
             I have worked for startups and also big multinational companies.
@@ -42,8 +42,8 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
             in production.
           </Text>
           <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Right now working with React, Node js and typescript. Based in the
-            EU and hodling a EU passport
+            Proficient using project management tools such as Jira, Confluence
+            and GitHub or Gitlab
           </Text>
         </CustomCard>
       </Flex>
@@ -71,14 +71,15 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
             What moves me
           </Text>
           <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Experienced Programmer and Operations Engineer with a demonstrated
-            history of working in the information technology and services
-            industry. Team player, communicative, problem-solving and eager to
-            learn everyday are just part of my soft skills.
+            Help achieve your goals and make a robust stable product for your
+            needs are the most important factors that really move me. Also, I am
+            always looking forward to get my hands on the new emerging
+            technologies to improve my knowledge and keep on the loop.
           </Text>
           <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Right now working with React, Node js and typescript. Based in the
-            EU and hodling a EU passport
+            Love helping and mentoring other and also learn from others. I
+            believe that everyday you can learn something new or make something
+            that will help others
           </Text>
         </CustomCard>
       </Flex>

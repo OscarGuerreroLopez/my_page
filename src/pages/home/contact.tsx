@@ -63,7 +63,7 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
                   <Content
                     title={"Need help or advice on a project?"}
                     content={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      "I offer consultancy services for any type of companies looking to implement or improve their technology stack. Contact me if you need help."
                     }
                   />
                 </Flex>
@@ -83,7 +83,7 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
                   <Content
                     title={"Don't know what to do with your data?"}
                     content={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      "Data analysis is defined as a process of cleaning, transforming, and modeling data to discover useful information for business decision-making. I can help you with that."
                     }
                   />
                 </Flex>
@@ -113,7 +113,7 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
                   <Content
                     title={"I am here to help others progress in their career"}
                     content={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      "Wherever you are on your IT career path, it pays to find an experienced advisor who can guide you through pitfalls and shortcuts, both within your company and in the broader industry."
                     }
                   />
                 </Flex>

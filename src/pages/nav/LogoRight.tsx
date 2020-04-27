@@ -63,7 +63,7 @@ export const LogoRight: React.FC<IProps> = ({
             display: "none",
           },
           px: 2,
-          py: [1, 1, 1, 1, 1, "23px", "13px"],
+          py: [1, 1, 1, 1, 1, "27px", "28px"],
         }}
       >
         <Text
