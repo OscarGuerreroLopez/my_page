@@ -1,10 +1,9 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import { Loader } from "../components/loader";
+import Loader from "../components/loader";
 import Nav from "../pages/nav";
-import Notfound from "../pages/default/notFound";
-
+import Footer from "../pages/footer";
 const Home = lazy(() => import("../pages/home"));
 const NotFound = lazy(() => import("../pages/default/notFound"));
 
@@ -16,9 +15,10 @@ const Router = () => {
         <Switch>
           <Route path="/" exact component={Home} />
 
-          <Route component={Notfound} />
+          <Route component={NotFound} />
         </Switch>
       </Suspense>
+      <Footer />
     </BrowserRouter>
   );
 };

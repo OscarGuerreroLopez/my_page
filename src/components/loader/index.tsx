@@ -8,7 +8,7 @@ const override = css`
   border-color: red;
 `;
 
-export const Loader: React.FC<{}> = () => {
+const Loader: React.FC<{}> = () => {
   return (
     <>
       <BounceLoader css={override} size={300} color={"#3383FF"} />
@@ -18,3 +18,5 @@ export const Loader: React.FC<{}> = () => {
     </>
   );
 };
+
+export default Loader;

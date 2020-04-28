@@ -109,14 +109,15 @@ const Home = withRouter(
         </Flex>
         <Flex
           sx={{
-            mt: [3, 4, 4, 4, -1],
+            mt: [3, 4, 4, 4, -2],
           }}
           justifyContent="center"
+          flexWrap="wrap"
         >
           <Box
             sx={{
               width: ["100%"],
-              maxHeight: "200px",
+              minHeight: ["0px", "0px", "0px", "0px", "120px", "150px"],
               backgroundImage: [
                 "",
                 "",
@@ -127,10 +128,12 @@ const Home = withRouter(
                 `url(${wave5})`,
               ],
               backgroundSize: "cover",
+              backgroundColor: "grey",
             }}
-          >
+          />
+          <Flex width="100%" mt={[2, 2, 3, 3, -100, -190]}>
             <Contact onClick={clickedContact} />
-          </Box>
+          </Flex>
         </Flex>
       </>
     );

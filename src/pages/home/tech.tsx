@@ -15,9 +15,9 @@ const StackImages: React.FC<IStackImage> = ({ name, title }): JSX.Element => {
     <Flex
       sx={{
         witdth: ["33.3%"],
-        ml: [2, 3, 3, 3, 2, 3, 4],
-        mr: [2, 3, 3, 3, 2, 3, 4],
-        mt: [2, 3, 3, 3, 2, 3, 4],
+        ml: [2, 3, 3, 3, 2, 3, "38px"],
+        mr: [2, 3, 3, 3, 2, 3, "38px"],
+        mt: [2, 3, 3, 3, 2, 3, "38px"],
       }}
     >
       <Card width={[40, 60, 80, 100, 120, 140, 200]} mx="auto">
@@ -35,6 +35,7 @@ export const Tech: React.FC<IProps> = (): JSX.Element => {
         sx={{
           mb: [2, 2, 2, 3, 4, 4, 4],
           width: ["100%", "100%", "100%", "100%", "60%"],
+          bg: "yellow",
         }}
       >
         <CustomCard width="100%">
