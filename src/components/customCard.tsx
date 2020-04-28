@@ -1,11 +1,12 @@
 /** @jsx jsx */
-import React from "react";
+import React, { ReactNode } from "react";
 import { Card } from "rebass";
 import { jsx } from "@emotion/core";
 import { useThemeUI } from "theme-ui";
 
 interface IProps {
   [key: string]: any;
+  children: ReactNode;
 }
 
 export const CustomCard: React.FC<IProps> = ({
@@ -29,7 +30,6 @@ export const CustomCard: React.FC<IProps> = ({
         background: `${
           context.colorMode !== "default" ? "#202020" : "#FDFDFB"
         }`,
-        // height: [null, null, null, null, null, "100%", "100%"],
       }}
     >
       {children}

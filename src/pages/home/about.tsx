@@ -1,14 +1,13 @@
 import React from "react";
-import { Flex, Text, Box, Card, Image } from "rebass";
+import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
+import { CardText } from "../../components/cardContent";
 import visionary from "./images/programming.svg";
 
-interface IProps {
-  onClick: () => void;
-}
+interface IProps {}
 
-export const AboutUs: React.FC<IProps> = ({ onClick }): JSX.Element => {
+export const AboutUs: React.FC<IProps> = (): JSX.Element => {
   return (
     <Flex flexWrap="wrap">
       <Flex
@@ -35,23 +34,21 @@ export const AboutUs: React.FC<IProps> = ({ onClick }): JSX.Element => {
           mr={["0", "0", "0", "0", "5", "6", "6"]}
           mb={["0", "0", "0", "0", "5", "6", "6"]}
         >
-          <Text
-            fontSize={[2, 2, 3, 3, 3, 4, 4]}
-            fontWeight="bold"
-            textAlign="center"
-          >
-            About me
-          </Text>
-          <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Experienced Programmer and Operations Engineer with a demonstrated
-            history of working in the information technology and services
-            industry. Team player, communicative, problem-solving and eager to
-            learn everyday are just part of my soft skills.
-          </Text>
-          <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Right now working with React, Node js and typescript. MongoDB and
-            MySql databases with mongoose and TypeOrm.
-          </Text>
+          <CardText title={"About me"} />
+          <CardText
+            content={
+              " Experienced Programmer and Operations Engineer with a demonstrated\
+            history of working in the information technology and services\
+            industry. Team player, communicative, problem-solving and eager to\
+            learn everyday are just part of my soft skills."
+            }
+          />
+          <CardText
+            content={
+              "Right now working with React, Node js and typescript. MongoDB and\
+            MySql databases with mongoose and TypeOrm."
+            }
+          />
         </CustomCard>
       </Flex>
     </Flex>

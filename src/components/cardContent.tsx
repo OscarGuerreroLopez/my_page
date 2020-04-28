@@ -6,7 +6,7 @@ interface IContent {
   content?: string;
 }
 
-export const Content: React.FC<IContent> = ({
+export const CardText: React.FC<IContent> = ({
   title,
   content,
 }): JSX.Element => {

@@ -21,8 +21,8 @@ const Home = withRouter(
       window.scrollTo(0, 0);
     }, []);
 
-    const clickedAbout = () => {
-      history.push(`/about`);
+    const clickedContact = () => {
+      history.push("/");
     };
 
     return (
@@ -52,7 +52,7 @@ const Home = withRouter(
               backgroundSize: "cover",
             }}
           >
-            <AboutUs onClick={clickedAbout} />
+            <AboutUs />
           </Box>
         </Flex>
 
@@ -78,7 +78,7 @@ const Home = withRouter(
               backgroundSize: "cover",
             }}
           >
-            <Tech onClick={clickedAbout} />
+            <Tech />
           </Box>
         </Flex>
         <Flex
@@ -104,7 +104,7 @@ const Home = withRouter(
               backgroundSize: "cover",
             }}
           >
-            <Goodies onClick={clickedAbout} />
+            <Goodies />
           </Box>
         </Flex>
         <Flex
@@ -129,7 +129,7 @@ const Home = withRouter(
               backgroundSize: "cover",
             }}
           >
-            <Contact onClick={clickedAbout} />
+            <Contact onClick={clickedContact} />
           </Box>
         </Flex>
       </>

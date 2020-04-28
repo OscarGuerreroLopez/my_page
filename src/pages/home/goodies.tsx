@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Flex, Text, Box, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
@@ -6,11 +6,12 @@ import visionary from "./images/programming.svg";
 import analysis from "./images/Analysis.svg";
 import computer from "./images/computer.svg";
 
-interface IProps {
-  onClick: () => void;
+interface IProps {}
+interface ICards {
+  children: ReactNode;
 }
 
-export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
+export const Goodies: React.FC<IProps> = (): JSX.Element => {
   return (
     <Flex flexWrap="wrap">
       <Flex
@@ -19,6 +20,8 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
           width: ["100%", "100%", "100%", "100%", "50%"],
         }}
       >
+        {/* ************************************************************************** */}
+
         <CustomCard
           mr={["0", "0", "0", "0", "3", "3", "3"]}
           ml={["0", "0", "0", "0", "5", "6", "6"]}
@@ -46,6 +49,7 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
             and GitHub or Gitlab
           </Text>
         </CustomCard>
+        {/* ************************************************************************** */}
       </Flex>
       <Flex
         sx={{
@@ -53,6 +57,8 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
           width: ["100%", "100%", "100%", "100%", "50%"],
         }}
       >
+        {/* ************************************************************************** */}
+
         <CustomCard
           mr={["0", "0", "0", "0", "5", "6", "6"]}
           ml={["0", "0", "0", "0", "3", "3", "3"]}
@@ -70,18 +76,20 @@ export const Goodies: React.FC<IProps> = ({ onClick }): JSX.Element => {
           >
             What moves me
           </Text>
-          <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
+          <Text fontSize={[2, 2, 2, 2, 3, 3, 4]}>
             Help achieve your goals and make a robust stable product for your
             needs are the most important factors that really move me. Also, I am
             always looking forward to get my hands on the new emerging
             technologies to improve my knowledge and keep on the loop.
           </Text>
-          <Text p={1} fontSize={[2, 2, 2, 2, 3, 3, 4]}>
+          <Text fontSize={[2, 2, 2, 2, 3, 3, 4]}>
             Love helping and mentoring other and also learn from others. I
             believe that everyday you can learn something new or make something
             that will help others
           </Text>
         </CustomCard>
+
+        {/* ************************************************************************** */}
       </Flex>
     </Flex>
   );

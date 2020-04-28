@@ -32,7 +32,6 @@ export const theme = {
     text: "#000",
     background: "#fff",
     primary: "#07c",
-    oscar: "red",
     modes: {
       dark: {
         text: "#F99173",
@@ -102,16 +101,6 @@ export const theme = {
     td: {
       textAlign: "left",
       borderBottomStyle: "solid",
-    },
-  },
-  osquitar: {
-    primary: {
-      color: "pink",
-      bg: "orange",
-    },
-    secondary: {
-      color: "grey",
-      bg: "yellow",
     },
   },
 };

@@ -4,7 +4,7 @@ import { Flex, Text } from "rebass";
 
 import { MetaTags } from "../../utils/MetaTags";
 import { CustomCard } from "../../components/customCard";
-import { Content } from "../../components/cardContent";
+import { CardText } from "../../components/cardContent";
 interface IProps extends RouteComponentProps {}
 
 const Notfound = withRouter(({ history }: IProps) => {
@@ -19,12 +19,17 @@ const Notfound = withRouter(({ history }: IProps) => {
         justifyContent="center"
       >
         <CustomCard width="80%">
-          <Content
+          <CardText
             title={"Page not found"}
             content={
               "This page does not exists or it is under construction. Sorry for the inconvenience"
             }
           />
+
+          <Text fontSize={[1, 1, 2, 3, 4]} fontWeight="bold">
+            By the way, soon I will publish the code in github
+          </Text>
+
           <Text
             fontSize={[2, 2, 3, 4, 5]}
             fontWeight="bold"

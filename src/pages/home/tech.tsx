@@ -2,11 +2,8 @@ import React from "react";
 import { Flex, Text, Box, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
-import visionary from "./images/programming.svg";
 
-interface IProps {
-  onClick: () => void;
-}
+interface IProps {}
 
 interface IStackImage {
   name: string;
@@ -31,7 +28,7 @@ const StackImages: React.FC<IStackImage> = ({ name, title }): JSX.Element => {
   );
 };
 
-export const Tech: React.FC<IProps> = ({ onClick }): JSX.Element => {
+export const Tech: React.FC<IProps> = (): JSX.Element => {
   return (
     <Flex flexWrap="wrap" justifyContent="center">
       <Flex
@@ -40,12 +37,7 @@ export const Tech: React.FC<IProps> = ({ onClick }): JSX.Element => {
           width: ["100%", "100%", "100%", "100%", "60%"],
         }}
       >
-        <CustomCard
-          // ml={["0", "0", "0", "0", "5", "6", "6"]}
-          //   mb={["0", "0", "0", "0", "5", "6", "6"]}
-
-          width="100%"
-        >
+        <CustomCard width="100%">
           <Text
             fontSize={[2, 2, 3, 3, 3, 5, 5]}
             fontWeight="bold"
