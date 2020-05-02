@@ -52,10 +52,10 @@ const Footer: React.FC<IProps> = (): JSX.Element => {
             width: ["100%", "100%", "100%", "100%", "100%", "33.3%", "33.3%"],
           }}
         >
-          <Link text={"Quienes somos"} link={"/about"} />
-          <Link text={"Nuestros Servicios"} link={"/services"} />
-          <Link text={"Contacto"} link={"/contact"} />
-          <Link text={"Politica de privacidad"} link={"/privacy"} />
+          <Link text={"Work Experience"} link={"/experience"} />
+          <Link text={"Repos"} link={"/repos"} />
+          <Link text={"Contact"} link={"/contact"} />
+          <Link text={"Blog"} link={"/blog"} />
         </Flex>
 
         <Flex
@@ -93,10 +93,40 @@ const Footer: React.FC<IProps> = (): JSX.Element => {
                 window.scrollTo(0, 0);
               }
             }}
-            alt="Automatismos Dros"
+            alt="Oscar Guerrero"
           />
         </Flex>
-
+        <Flex
+          sx={{
+            width: ["100%", "100%", "100%", "100%", "100%", "33.3%", "33.3%"],
+            fontFamily: "Cambay",
+            p: 4,
+          }}
+        >
+          <Box fontSize={[3, 3, 3, 3, 3, 2, 2]} width={[1]}>
+            <Flex width={[1]} justifyContent="center">
+              <Text>Software Developer</Text>
+            </Flex>
+            <Flex width={[1]} justifyContent="center">
+              <Text>Full Stack</Text>
+            </Flex>
+            <Flex width={[1]} justifyContent="center">
+              <Text>React</Text>
+            </Flex>
+            <Flex width={[1]} justifyContent="center">
+              <Text>Angular</Text>
+            </Flex>
+            <Flex width={[1]} justifyContent="center">
+              <Text>Node js</Text>
+            </Flex>
+            <Flex width={[1]} justifyContent="center">
+              <Text>TypeScript</Text>
+            </Flex>
+            <Flex width={[1]} justifyContent="center">
+              <Text>Software Engineer</Text>
+            </Flex>
+          </Box>
+        </Flex>
         <Flex
           sx={{
             width: ["100%", "100%", "100%", "100%", "100%", "33%", "33%"],
@@ -134,7 +164,7 @@ const Footer: React.FC<IProps> = (): JSX.Element => {
                 window.scrollTo(0, 0);
               }
             }}
-            alt="Automatismos Dros"
+            alt="Oscar Guerrero"
           />
         </Flex>
       </Flex>

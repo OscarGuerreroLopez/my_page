@@ -1,7 +1,19 @@
 import React from "react";
-import { Flex, Text, Box, Card, Image } from "rebass";
+import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
+import angular from "./images/angularjs-original.svg";
+import node from "./images/nodejs-original.svg";
+import react from "./images/react-original.svg";
+import cplus from "./images/cplusplus-original.svg";
+import amazon from "./images/amazonwebservices-original.svg";
+import java from "./images/java-original.svg";
+import ts from "./images/typescript-original.svg";
+import redis from "./images/redis-original.svg";
+import python from "./images/python-original.svg";
+import mongodb from "./images/mongodb-original-wordmark.svg";
+import mysql from "./images/mysql-original-wordmark.svg";
+import gitlab from "./images/gitlab-original-wordmark.svg";
 
 interface IProps {}
 
@@ -21,7 +33,7 @@ const StackImages: React.FC<IStackImage> = ({ name, title }): JSX.Element => {
       }}
     >
       <Card width={[40, 60, 80, 100, 120, 140, 200]} mx="auto">
-        <Image src={name} />
+        <Image src={name} alt={name} />
         <Text textAlign="center">{title}</Text>
       </Card>
     </Flex>
@@ -47,71 +59,25 @@ export const Tech: React.FC<IProps> = (): JSX.Element => {
             My Stack
           </Text>
           <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={"https://icongr.am/devicon/angularjs-original.svg?size=600"}
-              title={"Angular"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/nodejs-original.svg?size=600"}
-              title={"Node"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/react-original.svg?size=600"}
-              title={"React"}
-            />
+            <StackImages name={angular} title={"Angular"} />
+            <StackImages name={node} title={"Node"} />
+            <StackImages name={react} title={"React"} />
           </Flex>
           <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={"https://icongr.am/devicon/cplusplus-original.svg?size=600"}
-              title={"C++"}
-            />
+            <StackImages name={cplus} title={"C++"} />
 
-            <StackImages
-              name={
-                "https://icongr.am/devicon/amazonwebservices-original.svg?size=600"
-              }
-              title={"Amazon"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/java-original.svg?size=600"}
-              title={"Java"}
-            />
+            <StackImages name={amazon} title={"Amazon"} />
+            <StackImages name={java} title={"Java"} />
           </Flex>
           <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={
-                "https://icongr.am/devicon/typescript-original.svg?size=600"
-              }
-              title={"TypeScript"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/redis-original.svg?size=600"}
-              title={"Redis"}
-            />
-            <StackImages
-              name={"https://icongr.am/devicon/python-original.svg?size=600"}
-              title={"Python"}
-            />
+            <StackImages name={ts} title={"TypeScript"} />
+            <StackImages name={redis} title={"Redis"} />
+            <StackImages name={python} title={"Python"} />
           </Flex>
           <Flex flexWrap="wrap" justifyContent="center">
-            <StackImages
-              name={
-                "https://icongr.am/devicon/mongodb-original-wordmark.svg?size=600"
-              }
-              title={"MongoDB"}
-            />
-            <StackImages
-              name={
-                "https://icongr.am/devicon/mysql-original-wordmark.svg?size=600"
-              }
-              title={"MySql"}
-            />
-            <StackImages
-              name={
-                "https://icongr.am/devicon/gitlab-original-wordmark.svg?size=600"
-              }
-              title={"GitLab"}
-            />
+            <StackImages name={mongodb} title={"MongoDB"} />
+            <StackImages name={mysql} title={"MySql"} />
+            <StackImages name={gitlab} title={"GitLab"} />
           </Flex>
         </CustomCard>
       </Flex>

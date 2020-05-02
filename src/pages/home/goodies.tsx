@@ -1,8 +1,7 @@
 import React, { ReactNode } from "react";
-import { Flex, Text, Box, Card, Image } from "rebass";
+import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
-import visionary from "./images/programming.svg";
 import analysis from "./images/Analysis.svg";
 import computer from "./images/computer.svg";
 
@@ -83,9 +82,9 @@ export const Goodies: React.FC<IProps> = (): JSX.Element => {
             technologies to improve my knowledge and keep on the loop.
           </Text>
           <Text fontSize={[2, 2, 2, 2, 3, 3, 4]}>
-            Love helping and mentoring other and also learn from others. I
-            believe that everyday you can learn something new or make something
-            that will help others
+            Love helping and mentoring others and also learn from others as
+            well. I believe that everyday you can learn something new or make
+            something that will help others
           </Text>
         </CustomCard>
 

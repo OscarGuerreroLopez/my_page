@@ -8,7 +8,6 @@ import { Tech } from "./tech";
 import { Goodies } from "./goodies";
 import { Contact } from "./contact";
 import wave from "./images/wave.svg";
-import wave2 from "./images/wave2.svg";
 import wave3 from "./images/wave3.svg";
 import wave4 from "./images/wave4.svg";
 import wave5 from "./images/wave5.svg";

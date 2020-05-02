@@ -1,9 +1,8 @@
 import React from "react";
-import { Flex, Text, Box, Card, Image } from "rebass";
+import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
 import { CardText } from "../../components/cardContent";
-import visionary from "./images/programming.svg";
 import office from "./images/office.svg";
 import worktogether from "./images/worktogether.svg";
 import data from "./images/data.svg";
@@ -42,7 +41,6 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
           {/* ************************************************************************** */}
 
           <Card
-            width="100%"
             sx={{
               mt: [4],
               ml: [1, 1, 1, 1, 1, 3, 3],
@@ -68,7 +66,6 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
 
           {/* ************************************************************************** */}
           <Card
-            width="100%"
             sx={{
               mt: [4],
               ml: [1, 1, 1, 1, 1, 3, 3],
@@ -93,7 +90,6 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
           </Card>
           {/* ************************************************************************** */}
           <Card
-            width="100%"
             sx={{
               mt: [4],
               ml: [1, 1, 1, 1, 1, 3, 3],
