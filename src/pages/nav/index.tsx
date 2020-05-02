@@ -29,6 +29,10 @@ const Nav = withRouter(
       history.push(`${linksObject[link]}`);
     };
 
+    const onClickHome = () => {
+      history.push("/");
+    };
+
     return (
       <>
         <Flex
@@ -45,7 +49,7 @@ const Nav = withRouter(
               width: ["20%", "15%", "20%", "18%", "11%", "60%", "60%"],
             }}
           >
-            <LogoLeft image={oscar} />
+            <LogoLeft image={oscar} onClick={onClickHome} />
             <Links linksObject={linksObject} onClick={onClickLink} />
           </Flex>
           <Flex

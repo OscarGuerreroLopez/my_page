@@ -3,8 +3,9 @@ import { Box, Image } from "rebass";
 
 interface IProps {
   image: string;
+  onClick: () => void;
 }
-export const LogoLeft: React.FC<IProps> = ({ image }): JSX.Element => {
+export const LogoLeft: React.FC<IProps> = ({ image, onClick }): JSX.Element => {
   return (
     <Box width={[1, 1, 0.75, 1, 1, 1 / 5, 1 / 7]}>
       <Image
@@ -17,6 +18,7 @@ export const LogoLeft: React.FC<IProps> = ({ image }): JSX.Element => {
           width: [48, 48, 58, 68, 78, 88, 98],
           borderRadius: 9999,
         }}
+        onClick={() => onClick()}
       />
     </Box>
   );

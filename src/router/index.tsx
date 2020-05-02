@@ -6,6 +6,7 @@ import Nav from "../pages/nav";
 import Footer from "../pages/footer";
 const Home = lazy(() => import("../pages/home"));
 const NotFound = lazy(() => import("../pages/default/notFound"));
+const Experience = lazy(() => import("../pages/work"));
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/experience" exact component={Experience} />
 
           <Route component={NotFound} />
         </Switch>

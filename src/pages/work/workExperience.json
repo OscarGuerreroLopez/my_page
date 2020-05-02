@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "title": "Software Engineer Full Stack",
+      "company": "Red Acre LTD. St Julians, Malta. June 2019 - Present",
+      "description": "Full Stack developing the new microservice backend for the company using Node.js with typescript. Alternating GraphQL and Rest endpoints. Also collaborating with the development of the theme-ui, Emotion, SWR). All of this in AWS (Lambda, S3, ECS, cloudfront, ...). Microservices using Docker and the ELK stack as a monitoring tool. Unit testing with Jest"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "LiveScore. Prague, Czechia. November 2018 - May 2019",
+      "description": "Developing applications for an international company located in Prague. Working with: React, Redux (+thunk), Styled Components + polished, Axios, Lodash, Normalizr, Material-UI, AtlasKit, TypeScript, and some Node.js with graphQL"
+    },
+    {
+      "title": "Software Operations Engineer",
+      "company": "Techona. Prague, Czechia. February 2018 - October 2018",
+      "description": "Creating applications with Angular 5 and node.js. Building Rest APIs with node.js(express) and swagger. SQL Database Management and Monitoring. API Monitoring and Debugging. Customer Support via Cherwell Ticketing System. Windows APP/Web Servers Handling. Handling Digital Certificates and API Tokens. Roll outs and Deployments. CDN Support (Limelight, Cloudflare, CDNetworks). Using tools and technologies such as Confluence and Jira. Tuning and optimization of performance of in-house applications as well as third party software"
+    },
+    {
+      "title": "Software Engineer Full Stack",
+      "company": "Europcar. Madrid, Spain. June 2016 - January 2018",
+      "description": "Started as a support technician and moved shortly after to the IT department as a Full Stack developer, where my responsibilities included assisting the IT department to develop and maintain applications. Technologies that I used include Angular2/4, Bootstrap, Node JS, and MySql. Also I was required to develop scripts in Python and Bash. My job consisted mainly in: Creating RESTfull apis, making sure the GIT repository was up to date, building and designing UIs that were responsive, fine-tuning of application performance"
+    },
+    {
+      "title": "Business manager",
+      "company": "Ciclos Barajas. Madrid, Spain. January 2010 - May 2016",
+      "description": "Created my own sports business. I gained ability to cope with dynamic market conditions and developed sale strategies accordingly. I was able to understand customers mindsets and needs to adjust my strategies. Used my information technology background to automate the entire inventory system and developed an online shop to sell my products."
+    },
+    {
+      "title": "Programmer/Analyst",
+      "company": "Freelance. Madrid, Spain. November 2005 - December 2009",
+      "description": "Developed and maintained applications and databases for different clients working through the entire life cycle, from the problem definition all the way to deployment and maintenance. Used programming languages such as C++ and Java in Windows and Linux environments."
+    },
+    {
+      "title": "Programmer/Analyst",
+      "company": "Drago Solutions. Madrid, Spain. September 2001 - June 2005",
+      "description": "Worked extensively in the field of application programming, application analysis, design of functions and programming. Worked on IBM AS/400 systems with RPG IV and SQL. Acquired as well as developed test data, revising program(s) resulting in improved performance."
+    },
+    {
+      "title": "Programmer/Analyst",
+      "company": "Stryker. Kalamazoo, Michigan. May 2000 - August 2001",
+      "description": "Applied consulting methods to design and implement IT system solutions for the company. Developed programs in RPG III, RPG IV, ILE and CL. Monitored the execution of strategies and kept up to date with the new technology and researched latest technology market trends."
+    }
+  ]
+}
