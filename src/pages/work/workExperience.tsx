@@ -18,7 +18,7 @@ export const WorkExperience: React.FC<IProps> = ({
       <Text
         fontWeight="bold"
         fontSize={[2, 2, 3, 3, 4, 4, 5, 5]}
-        ml={[5]}
+        ml={[1, 1, 1, 1, 1, 5]}
         mr={[4]}
         width="100%"
       >
@@ -26,13 +26,17 @@ export const WorkExperience: React.FC<IProps> = ({
       </Text>
       <Text
         fontSize={[2, 2, 3, 3, 3, 3, 4, 4]}
-        color="red"
-        ml={[5]}
+        color="#D006F9"
+        ml={[1, 1, 1, 1, 1, 5]}
         width="100%"
       >
         {company}
       </Text>
-      <Text fontSize={[1, 1, 2, 2, 2, 2, 3, 3]} ml={[5]} width="100%">
+      <Text
+        fontSize={[1, 1, 2, 2, 2, 2, 3, 3]}
+        ml={[1, 1, 1, 1, 1, 5]}
+        width="100%"
+      >
         {description}
       </Text>
     </Flex>

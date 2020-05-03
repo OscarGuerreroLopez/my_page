@@ -42,6 +42,7 @@ const Nav = withRouter(
             color: (theme) => `${colorMode === "dark" ? "#3383FF" : null}`,
             // bg: (theme) => `${colorMode === "default" ? "#EEEEEC" : null}`,
           }}
+          id="nav"
         >
           <Flex
             sx={{
