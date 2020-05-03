@@ -37,7 +37,7 @@ export const Second: React.FC<IProps> = (): JSX.Element => {
           >
             <Flex>
               <Card width={[256, 256, 300, 320, 370, 420, 550]} mx="auto">
-                <Image src={completed} />
+                <Image src={completed} alt="Oscar Guerrero" />
               </Card>
             </Flex>
             <Flex flexWrap="wrap" justifyContent="center">
@@ -85,7 +85,7 @@ export const Second: React.FC<IProps> = (): JSX.Element => {
               {/* ******************************************** */}
               <Flex width="40%">
                 <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-                  <Image src={chat} />
+                  <Image src={chat} alt="Oscar Guerrero" />
                 </Card>
               </Flex>
               <Flex width="60%" flexWrap="wrap">
@@ -109,14 +109,14 @@ export const Second: React.FC<IProps> = (): JSX.Element => {
               </Flex>
               <Flex width="40%">
                 <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-                  <Image src={design} />
+                  <Image src={design} alt="Oscar Guerrero" />
                 </Card>
               </Flex>
 
               {/* ******************************************** */}
               <Flex width="40%">
                 <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-                  <Image src={done} />
+                  <Image src={done} alt="Oscar Guerrero" />
                 </Card>
               </Flex>
               <Flex width="60%" flexWrap="wrap">

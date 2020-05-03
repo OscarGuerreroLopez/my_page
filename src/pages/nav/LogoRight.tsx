@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Image, Button, Flex, Text } from "rebass";
 import { useThemeUI } from "theme-ui";
 
-import bars from "./images/bars.svg";
-import bars2 from "./images/bars2.svg";
+// import bars from "./images/bars.svg";
+// import bars2 from "./images/bars2.svg";
 
 interface IProps {
   displayLinks: boolean;
@@ -50,10 +50,15 @@ export const LogoRight: React.FC<IProps> = ({
         >
           <Image
             // src={colorMode === "dark" ? barsDark : barsLight}
-            src={colorMode === "default" ? bars : bars2}
+            src={
+              colorMode === "default"
+                ? "https://ik.imagekit.io/zhu0vsy9dn/oscar_page/bars_4mm8hFc4utI.svg"
+                : "https://ik.imagekit.io/zhu0vsy9dn/oscar_page/bars2_o7SK0Vejv_Jg.svg"
+            }
             sx={{
               width: ["100%", "100%"],
             }}
+            alt="Oscar Guerrero"
           />
         </Button>
       </Box>

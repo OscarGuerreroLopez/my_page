@@ -3,7 +3,7 @@ import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
 import { CardText } from "../../components/cardContent";
-import visionary from "./images/programming.svg";
+// import visionary from "./images/programming.svg";
 
 interface IProps {}
 
@@ -21,7 +21,10 @@ export const AboutUs: React.FC<IProps> = (): JSX.Element => {
           <Text fontSize={["3", "3", "3", "3", "4", "4", "5"]}>
             Hello I am Oscar Guerrero
           </Text>
-          <Image src={visionary} />
+          <Image
+            src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/programming_MrDc9H5Xhqy.svg"
+            alt="Oscar Guerrero"
+          />
         </Card>
       </Flex>
       <Flex

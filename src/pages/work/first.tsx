@@ -27,7 +27,7 @@ export const First: React.FC<IProps> = (): JSX.Element => {
         <CustomCard width={["100%"]}>
           <Flex width={["100%"]} mt={["4"]}>
             <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-              <Image src={resume} />
+              <Image src={resume} alt="Oscar Guerrero" />
             </Card>
           </Flex>
           <Flex flexWrap="wrap" justifyContent="center" width={["100%"]} mt="4">

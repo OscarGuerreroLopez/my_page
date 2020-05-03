@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Flex, Box } from "rebass";
 
 import { MetaTags } from "../../utils/MetaTags";
-import tour from "./tour.jpg";
+// import tour from "./tour.jpg";
 import { ContactCard } from "./contactCard";
 
 interface IProps {}
@@ -44,7 +44,9 @@ const Contact = () => {
           sx={{
             width: ["100%"],
             height: ["100%"],
-            backgroundImage: [`url(${tour})`],
+            backgroundImage: [
+              `url(https://ik.imagekit.io/zhu0vsy9dn/oscar_page/tour_0MWafNWzAbz.jpg)`,
+            ],
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repat",

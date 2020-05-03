@@ -7,7 +7,7 @@ import { LinksBellow } from "./linksBellow";
 import { LogoLeft } from "./LogoLeft";
 import { LogoRight } from "./LogoRight";
 import { LogoCenter } from "./LogoCenter";
-import oscar from "./images/Oscar.jpg";
+// import oscar from "./images/Oscar.jpg";
 
 import { useThemeUI } from "theme-ui";
 
@@ -49,7 +49,12 @@ const Nav = withRouter(
               width: ["20%", "15%", "20%", "18%", "11%", "60%", "60%"],
             }}
           >
-            <LogoLeft image={oscar} onClick={onClickHome} />
+            <LogoLeft
+              image={
+                "https://ik.imagekit.io/zhu0vsy9dn/oscar_page/Oscar_S82s-67Fsrbd.jpg"
+              }
+              onClick={onClickHome}
+            />
             <Links linksObject={linksObject} onClick={onClickLink} />
           </Flex>
           <Flex

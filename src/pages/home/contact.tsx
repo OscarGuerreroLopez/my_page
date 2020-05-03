@@ -3,10 +3,10 @@ import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
 import { CardText } from "../../components/cardContent";
-import office from "./images/office.svg";
-import worktogether from "./images/worktogether.svg";
-import data from "./images/data.svg";
-import feedback from "./images/feedback.svg";
+// import office from "./images/office.svg";
+// import worktogether from "./images/worktogether.svg";
+// import data from "./images/data.svg";
+// import feedback from "./images/feedback.svg";
 
 interface IProps {
   onClick: () => void;
@@ -28,7 +28,10 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
       >
         <CustomCard width="100%">
           <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-            <Image src={office} />
+            <Image
+              src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/office_IEirNhAbBhg4.svg"
+              alt="Oscar Guerrero"
+            />
           </Card>
 
           <Text
@@ -50,7 +53,10 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
             <Flex flexWrap="wrap">
               <Flex width="35%" justifyContent="center" mt={[2]}>
                 <Card width={[80, 150, 120, 150, 175, 210, 225]} mx="auto">
-                  <Image src={worktogether} />
+                  <Image
+                    src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/worktogether_ri5W0b1RE4HH.svg"
+                    alt="Oscar Guerrero"
+                  />
                 </Card>
               </Flex>
               <Flex width="65%" justifyContent="center" flexWrap="wrap">
@@ -83,7 +89,10 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
               </Flex>
               <Flex width="35%" mt={[2]} justifyContent="center">
                 <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
-                  <Image src={data} />
+                  <Image
+                    src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/data_qfeeULNksITg.svg"
+                    alt="Oscar Guerrero"
+                  />
                 </Card>
               </Flex>
             </Flex>
@@ -99,7 +108,10 @@ export const Contact: React.FC<IProps> = ({ onClick }): JSX.Element => {
             <Flex flexWrap="wrap">
               <Flex width="35%" mt={[3]} justifyContent="center">
                 <Card width={[80, 100, 120, 150, 175, 210, 225]} mx="auto">
-                  <Image src={feedback} />
+                  <Image
+                    src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/feedback_TVS3ga86Ohxd.svg"
+                    alt="Oscar Guerrero"
+                  />
                 </Card>
               </Flex>
               <Flex width="65%" justifyContent="center" flexWrap="wrap">

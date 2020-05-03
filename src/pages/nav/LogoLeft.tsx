@@ -19,6 +19,7 @@ export const LogoLeft: React.FC<IProps> = ({ image, onClick }): JSX.Element => {
           borderRadius: 9999,
         }}
         onClick={() => onClick()}
+        alt="Oscar Guerrero"
       />
     </Box>
   );

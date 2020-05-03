@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 import { Flex, Text, Card, Image } from "rebass";
 
 import { CustomCard } from "../../components/customCard";
-import analysis from "./images/Analysis.svg";
-import computer from "./images/computer.svg";
+// import analysis from "./images/Analysis.svg";
+// import computer from "./images/computer.svg";
 
 interface IProps {}
 interface ICards {
@@ -28,7 +28,10 @@ export const Goodies: React.FC<IProps> = (): JSX.Element => {
         >
           <Flex>
             <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-              <Image src={analysis} />
+              <Image
+                src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/Analysis_a6rFS4Tik0g8.svg"
+                alt="Oscar Guerrero"
+              />
             </Card>
           </Flex>
           <Text
@@ -65,7 +68,10 @@ export const Goodies: React.FC<IProps> = (): JSX.Element => {
         >
           <Flex>
             <Card width={[256, 256, 300, 320, 350, 420, 550]} mx="auto">
-              <Image src={computer} />
+              <Image
+                src="https://ik.imagekit.io/zhu0vsy9dn/oscar_page/computer_X_GvnxC7Oso.svg"
+                alt="Oscar Guerrero"
+              />
             </Card>
           </Flex>
           <Text
