@@ -40,7 +40,6 @@ const Nav = withRouter(
           sx={{
             maxHeight: "90px",
             color: (theme) => `${colorMode === "dark" ? "#3383FF" : null}`,
-            // bg: (theme) => `${colorMode === "default" ? "#EEEEEC" : null}`,
           }}
           id="nav"
         >

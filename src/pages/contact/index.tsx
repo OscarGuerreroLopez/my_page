@@ -20,8 +20,6 @@ const Contact = () => {
     getWindowDimensions(),
   );
 
-  //   console.log("@@@@", document.getElementById("nav")?.scrollHeight);
-
   useEffect(() => {
     window.scrollTo(0, 0);
     const handleResize = () => {
@@ -38,7 +36,7 @@ const Contact = () => {
       <Flex
         justifyContent="center"
         flexWrap="wrap"
-        mt="2"
+        mt={["0", "0", "0", "0", "0", "4"]}
         width={windowDimensions.width}
         height={windowDimensions.height}
       >
@@ -46,15 +44,7 @@ const Contact = () => {
           sx={{
             width: ["100%"],
             height: ["100%"],
-            backgroundImage: [
-              //   "",
-              //   "",
-              //   "",
-              //   "",
-              //   `url(${tour})`,
-              //   `url(${tour})`,
-              `url(${tour})`,
-            ],
+            backgroundImage: [`url(${tour})`],
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repat",
