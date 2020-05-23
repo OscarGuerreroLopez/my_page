@@ -7,10 +7,8 @@ import { AboutUs } from "./about";
 import { Tech } from "./tech";
 import { Goodies } from "./goodies";
 import { Contact } from "./contact";
-// import wave from "./images/wave.svg";
-// import wave3 from "./images/wave3.svg";
-// import wave4 from "./images/wave4.svg";
-// import wave5 from "./images/wave5.svg";
+
+import { ReactGa } from "../../utils/reactGa";
 
 interface IProps extends RouteComponentProps {}
 
@@ -18,6 +16,7 @@ const Home = withRouter(
   ({ history }: IProps): JSX.Element => {
     useEffect(() => {
       window.scrollTo(0, 0);
+      ReactGa(window.location.pathname + window.location.search);
     }, []);
 
     const clickedContact = () => {

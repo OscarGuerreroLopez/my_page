@@ -5,6 +5,8 @@ import { MetaTags } from "../../utils/MetaTags";
 // import tour from "./tour.jpg";
 import { ContactCard } from "./contactCard";
 
+import { ReactGa } from "../../utils/reactGa";
+
 interface IProps {}
 
 const getWindowDimensions = () => {
@@ -22,6 +24,8 @@ const Contact = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGa(window.location.pathname + window.location.search);
+
     const handleResize = () => {
       setWindowDimensions(getWindowDimensions());
     };

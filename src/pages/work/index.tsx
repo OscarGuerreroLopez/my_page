@@ -6,11 +6,14 @@ import { First } from "./first";
 import { Second } from "./second";
 import wave from "./images/wave.svg";
 
+import { ReactGa } from "../../utils/reactGa";
+
 interface IProps {}
 
 const WorkExperience: React.FC<IProps> = (): JSX.Element => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGa(window.location.pathname + window.location.search);
   }, []);
 
   return (
