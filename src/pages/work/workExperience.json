@@ -2,12 +2,12 @@
   "data": [
     {
       "title": "Team lead (Software engineering)",
-      "company": "Grupo OneTec. Madrid, Spain. July 2020 - Present",
+      "company": "Grupo OneTec. Madrid, Spain. October 2020 - Present",
       "description": "Developing a microservice infrastructure for the new projects and migrating old ones following a DDD approach when possible. Managing a group of developers to follow best practices and also to comply with the deadlines using agile methods. Using: Node.js/TypeScript, Docker with AWS ECS/fargate, Redis , pub/sub, AWS SQS, RabbitMq, GraphQL, Rest apis against MySql(Sequelize) and MongoDb(mongoose)."
     },
     {
       "title": "Freelancer",
-      "company": "Freelancing. October 2020 - Present",
+      "company": "Freelancing. July 2020 - Present",
       "description": "Working on different side projects with Angular, React, Node.js, TypeScript, Postgres, MongoDB, MySQL. Providing free consultancy services as well for small companies in Europe to help them with the coronavirus situation."
     },
     {
