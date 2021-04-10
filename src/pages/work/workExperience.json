@@ -1,8 +1,18 @@
 {
   "data": [
     {
+      "title": "Team lead (Software engineering)",
+      "company": "Grupo OneTec. Madrid, Spain. July 2020 - Present",
+      "description": "Developing a microservice infrastructure for the new projects and migrating old ones following a DDD approach when possible. Managing a group of developers to follow best practices and also to comply with the deadlines using agile methods. Using: Node.js/TypeScript, Docker with AWS ECS/fargate, Redis , pub/sub, AWS SQS, RabbitMq, GraphQL, Rest apis against MySql(Sequelize) and MongoDb(mongoose)."
+    },
+    {
+      "title": "Freelancer",
+      "company": "Freelancing. October 2020 - Present",
+      "description": "Working on different side projects with Angular, React, Node.js, TypeScript, Postgres, MongoDB, MySQL. Providing free consultancy services as well for small companies in Europe to help them with the coronavirus situation."
+    },
+    {
       "title": "Software Engineer Full Stack",
-      "company": "Red Acre LTD. St Julians, Malta. June 2019 - Present",
+      "company": "Red Acre LTD. St Julians, Malta. June 2019 - June 2020",
       "description": "Full Stack developing the new microservice backend for the company using Node.js with typescript. Alternating GraphQL and Rest endpoints. Also collaborating with the development of the frontend part with React(TypeScript, Redux, Mobx, rebass, theme-ui, Emotion, SWR). All of this in AWS (Lambda, S3, ECS, cloudfront, ...). Microservices using Docker and the ELK stack as a monitoring tool. Unit testing with Jest"
     },
     {
